@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Support — Carelyn</title>
+<meta name="description" content="Get help with Carelyn. Contact our support team or browse frequently asked questions.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --purple: #6C5CE7; --purple-dark: #5A4BD1; --purple-light: #E9D8FF;
+    --teal: #00BFA5; --navy: #0D1B2A; --bg: #F2F4F7;
+    --white: #FFFFFF; --gray: #6C757D; --gray-light: #DEE2E6;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Poppins', sans-serif; background: var(--bg); color: var(--navy); }
+  nav { background: var(--white); border-bottom: 1px solid var(--gray-light); padding: 0 5%; height: 68px; display: flex; align-items: center; justify-content: space-between; }
+  .nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+  .nav-logo-mark { width: 36px; height: 36px; border-radius: 10px; overflow: hidden; }
+  .nav-logo-text { font-size: 20px; font-weight: 700; color: var(--navy); }
+  .nav-back { font-size: 14px; font-weight: 500; color: var(--gray); text-decoration: none; }
+  .nav-back:hover { color: var(--purple); }
+
+  .support-hero { background: var(--navy); padding: 80px 5%; text-align: center; }
+  .support-hero h1 { font-size: 40px; font-weight: 800; color: var(--white); margin-bottom: 12px; }
+  .support-hero p { font-size: 16px; color: rgba(255,255,255,0.55); }
+
+  .support-body { max-width: 900px; margin: 0 auto; padding: 60px 5%; }
+
+  .contact-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; margin-bottom: 64px; }
+
+  .contact-card { background: var(--white); border-radius: 20px; padding: 32px; text-align: center; border: 1px solid var(--gray-light); transition: all 0.2s; }
+  .contact-card:hover { border-color: var(--purple); transform: translateY(-4px); }
+  .contact-card-icon { font-size: 32px; margin-bottom: 16px; }
+  .contact-card h3 { font-size: 16px; font-weight: 700; color: var(--navy); margin-bottom: 8px; }
+  .contact-card p { font-size: 14px; color: var(--gray); margin-bottom: 16px; }
+  .contact-card a { display: inline-block; color: var(--purple); font-size: 14px; font-weight: 600; text-decoration: none; }
+  .contact-card a:hover { color: var(--purple-dark); }
+
+  .faq-section h2 { font-size: 28px; font-weight: 800; color: var(--navy); margin-bottom: 32px; }
+
+  .faq-item { background: var(--white); border-radius: 14px; margin-bottom: 12px; overflow: hidden; border: 1px solid var(--gray-light); }
+  .faq-question { padding: 20px 24px; font-size: 15px; font-weight: 600; color: var(--navy); cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+  .faq-question:hover { color: var(--purple); }
+  .faq-toggle { font-size: 20px; font-weight: 300; color: var(--purple); }
+  .faq-answer { padding: 0 24px 20px; font-size: 14px; color: var(--gray); line-height: 1.7; display: none; }
+  .faq-item.open .faq-answer { display: block; }
+  .faq-item.open .faq-toggle { transform: rotate(45deg); }
+
+  footer { background: var(--navy); padding: 32px 5%; text-align: center; margin-top: 80px; }
+  footer p { font-size: 13px; color: rgba(255,255,255,0.3); }
+  footer a { color: rgba(255,255,255,0.3); text-decoration: none; margin: 0 8px; }
+  footer a:hover { color: var(--teal); }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-logo">
+    <img src="carelyn-logo.png" alt="Carelyn" style="width:36px;height:36px;border-radius:10px;object-fit:cover;">
+    <span class="nav-logo-text">Carelyn</span>
+  </a>
+  <a href="/" class="nav-back">← Back to home</a>
+</nav>
+
+<div class="support-hero">
+  <h1>How can we help?</h1>
+  <p>We're here for you. Reach out anytime.</p>
+</div>
+
+<div class="support-body">
+
+  <div class="contact-cards">
+    <div class="contact-card">
+      <div class="contact-card-icon">✉️</div>
+      <h3>Email Support</h3>
+      <p>We respond to all emails within 24 hours, Monday through Friday.</p>
+      <a href="mailto:hello@getcarelyn.com">hello@getcarelyn.com</a>
+    </div>
+    <div class="contact-card">
+      <div class="contact-card-icon">💬</div>
+      <h3>Social Media</h3>
+      <p>Reach us on Facebook, Instagram, or LinkedIn for updates and support.</p>
+      <a href="https://www.instagram.com/get.carelyn/" target="_blank">@get.carelyn</a>
+    </div>
+    <div class="contact-card">
+      <div class="contact-card-icon">🌐</div>
+      <h3>Website</h3>
+      <p>Find more information about Carelyn and our features.</p>
+      <a href="https://getcarelyn.com">getcarelyn.com</a>
+    </div>
+  </div>
+
+  <div class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggle(this)">Who signs up — the patient or the caregiver? <span class="faq-toggle">+</span></div>
+      <div class="faq-answer">Anyone can sign up — it does not have to be the patient. Typically, a Primary Caregiver signs up, creates the care group, names the patient, and then invites family members and other caregivers by email. The patient can also have their own account if they'd like.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggle(this)">Does everyone on the care team have to pay? <span class="faq-toggle">+</span></div>
+      <div class="faq-answer">No — only one person pays. The subscription is tied to the care group, not individual users. Everyone invited to the care group gets the same plan access. If the Primary Caregiver is on the Family plan, all invited members get Family plan features at no additional cost.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggle(this)">How do I invite family members? <span class="faq-toggle">+</span></div>
+      <div class="faq-answer">Open the app and tap the Family tab. Tap "Invite Member" and enter their email address. They'll receive an invitation to download Carelyn and join your care group. Once they accept, they can see and contribute to the shared care record.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggle(this)">Is my health data private? <span class="faq-toggle">+</span></div>
+      <div class="faq-answer">Yes. Your data is only visible to members of your care group — people you explicitly invite. We use bank-level encryption and row-level security to ensure no one outside your care group can access your data. We never sell your health information or use it for advertising.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggle(this)">Is Carelyn HIPAA compliant? <span class="faq-toggle">+</span></div>
+      <div class="faq-answer">Carelyn is a consumer care coordination tool, not a covered entity under HIPAA. Like Apple Health, CaringBridge, and similar consumer apps, we are not a healthcare provider, health insurer, or clearinghouse. Your data is protected by our Privacy Policy and strong security practices, but Carelyn is not designed to serve as a clinical records system.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggle(this)">How does medication tracking work? <span class="faq-toggle">+</span></div>
+      <div class="faq-answer">When you add a medication, Carelyn searches the RxNorm database (from the US National Library of Medicine) to auto-complete the correct drug name and dosage. You set the scheduled time, and Carelyn sends daily reminders. Anyone on the care team can mark a medication as taken — and everyone else sees it immediately. The app also checks for drug interactions between all medications in the care group.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggle(this)">Can I cancel my subscription anytime? <span class="faq-toggle">+</span></div>
+      <div class="faq-answer">Yes. You can cancel anytime through the app Settings screen. Your access continues until the end of the current billing period. We do not charge cancellation fees and do not offer refunds for partial months.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggle(this)">What's the difference between Free and Family plans? <span class="faq-toggle">+</span></div>
+      <div class="faq-answer">The Free plan supports up to 5 family members with core features: medications, tasks, journal, and vitals. The Family plan ($9.99/mo) adds unlimited members, care scheduling, AI health insights, drug interaction warnings, FDA side effects, wearable sync, and data export.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggle(this)">What devices does Carelyn support? <span class="faq-toggle">+</span></div>
+      <div class="faq-answer">Carelyn is currently available on iOS (iPhone). Android is coming soon. Wearable device sync (Apple Watch, Fitbit) is on the roadmap for a future update.</div>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 Carelyn LLC · <a href="/">Home</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="mailto:hello@getcarelyn.com">Contact</a></p>
+</footer>
+
+<script>
+function toggle(el) {
+  const item = el.parentElement;
+  item.classList.toggle('open');
+}
+</script>
+
+</body>
+</html>
