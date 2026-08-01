@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Delete Your Account — Carelyn</title>
+<meta name="description" content="How to delete your Carelyn account and associated data — in the app or by request, without the app installed.">
+<link rel="icon" type="image/png" href="carelyn-logo.png">
+<link rel="apple-touch-icon" href="carelyn-logo.png">
+<meta name="theme-color" content="#0D1B2A">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --purple: #6C5CE7;
+    --purple-dark: #5A4BD1;
+    --purple-light: #E9D8FF;
+    --teal: #00BFA5;
+    --navy: #0D1B2A;
+    --bg: #F2F4F7;
+    --white: #FFFFFF;
+    --gray: #6C757D;
+    --gray-light: #DEE2E6;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Poppins', sans-serif; background: var(--bg); color: var(--navy); }
+
+  nav {
+    background: var(--white);
+    border-bottom: 1px solid var(--gray-light);
+    padding: 0 5%;
+    height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+  .nav-logo-mark { width: 36px; height: 36px; border-radius: 10px; overflow: hidden; }
+  .nav-logo-text { font-size: 20px; font-weight: 700; color: var(--navy); }
+  .nav-back { font-size: 14px; font-weight: 500; color: var(--gray); text-decoration: none; }
+  .nav-back:hover { color: var(--purple); }
+
+  .legal-hero {
+    background: var(--navy);
+    padding: 60px 5%;
+    text-align: center;
+  }
+  .legal-hero h1 { font-size: 36px; font-weight: 800; color: var(--white); margin-bottom: 8px; }
+  .legal-hero p { font-size: 14px; color: rgba(255,255,255,0.45); }
+
+  .legal-body {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 60px 5%;
+  }
+
+  .legal-body h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--navy);
+    margin: 40px 0 14px;
+    padding-top: 8px;
+    border-top: 2px solid var(--purple-light);
+  }
+  .legal-body h2:first-of-type { margin-top: 0; border-top: none; padding-top: 0; }
+
+  .legal-body h3 {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--purple);
+    margin: 24px 0 10px;
+  }
+
+  .legal-body p {
+    font-size: 15px;
+    color: var(--gray);
+    line-height: 1.8;
+    margin-bottom: 14px;
+  }
+
+  .legal-body ul, .legal-body ol {
+    margin: 0 0 14px 20px;
+  }
+
+  .legal-body ul li, .legal-body ol li {
+    font-size: 15px;
+    color: var(--gray);
+    line-height: 1.8;
+    margin-bottom: 6px;
+  }
+
+  .legal-card {
+    background: var(--purple-light);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin: 24px 0;
+    border-left: 4px solid var(--purple);
+  }
+
+  .legal-card p {
+    color: var(--navy);
+    margin: 0;
+    font-weight: 500;
+  }
+
+  .warn-card {
+    background: #FFF4E5;
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin: 24px 0;
+    border-left: 4px solid #F5A623;
+  }
+  .warn-card p {
+    color: var(--navy);
+    margin: 0;
+    font-weight: 500;
+  }
+
+  .email-btn {
+    display: inline-block;
+    background: var(--purple);
+    color: var(--white);
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 14px 28px;
+    border-radius: 12px;
+    margin: 6px 0 14px;
+  }
+  .email-btn:hover { background: var(--purple-dark); }
+
+  .contact-box {
+    background: var(--navy);
+    border-radius: 16px;
+    padding: 32px;
+    margin-top: 48px;
+  }
+  .contact-box h3 { color: var(--teal); margin-bottom: 16px; font-size: 16px; }
+  .contact-box p { color: rgba(255,255,255,0.7); margin-bottom: 6px; }
+  .contact-box a { color: var(--teal); text-decoration: none; }
+
+  footer {
+    background: var(--navy);
+    padding: 32px 5%;
+    text-align: center;
+  }
+  footer p { font-size: 13px; color: rgba(255,255,255,0.3); }
+  footer a { color: rgba(255,255,255,0.3); text-decoration: none; margin: 0 8px; }
+  footer a:hover { color: var(--teal); }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-logo">
+    <img src="carelyn-logo.png" alt="Carelyn" style="width:36px;height:36px;border-radius:10px;object-fit:cover;">
+    <span class="nav-logo-text">Carelyn</span>
+  </a>
+  <a href="/" class="nav-back">← Back to home</a>
+</nav>
+
+<div class="legal-hero">
+  <h1>Delete Your Account</h1>
+  <p>Carelyn — by Carelyn LLC · How to permanently delete your account and data</p>
+</div>
+
+<div class="legal-body">
+
+  <div class="legal-card">
+    <p>You can delete your Carelyn account and its associated data at any time — either directly in the app, or by emailing us if you no longer have the app installed. Deletion is immediate and permanent.</p>
+  </div>
+
+  <h2>Before You Delete</h2>
+  <div class="warn-card">
+    <p>If you have an active Carelyn Family subscription, cancel it first. Deleting your account does not automatically cancel a subscription billed through the Apple App Store or Google Play.</p>
+  </div>
+  <ul>
+    <li><strong>iPhone / iPad:</strong> Settings → your name → Subscriptions → Carelyn → Cancel</li>
+    <li><strong>Android:</strong> Google Play app → Profile → Payments &amp; subscriptions → Subscriptions → Carelyn → Cancel</li>
+  </ul>
+
+  <h2>Option 1 — Delete in the App</h2>
+  <ol>
+    <li>Open Carelyn and sign in</li>
+    <li>Go to <strong>Settings</strong></li>
+    <li>Tap <strong>Delete Account</strong></li>
+    <li>Confirm the deletion</li>
+  </ol>
+  <p>Your account is deleted immediately. There is no grace period and no way to undo it.</p>
+
+  <h2>Option 2 — Request Deletion Without the App</h2>
+  <p>If you've uninstalled the app or can't sign in, email us from the email address associated with your Carelyn account:</p>
+  <a class="email-btn" href="mailto:hello@getcarelyn.com?subject=Account%20Deletion%20Request">Email a deletion request</a>
+  <p>Send to <a href="mailto:hello@getcarelyn.com">hello@getcarelyn.com</a> with the subject "Account Deletion Request". We verify that the request comes from the account owner's email address and complete the deletion within 30 days.</p>
+
+  <h2>What Gets Deleted</h2>
+  <p>In every case, your account, sign-in credentials, profile, and personal identifiers are permanently deleted. What happens to care records depends on whether other people share your care group:</p>
+
+  <h3>If you are the only member of your care group</h3>
+  <p>Everything is permanently deleted: medications, medication history, tasks, care journal entries, health vitals, and the care schedule.</p>
+
+  <h3>If other members remain in your care group</h3>
+  <ul>
+    <li>Your account and personal identifiers are permanently deleted</li>
+    <li>Care records you contributed (such as medication logs and health vitals) remain with the care group, because they are part of the patient's shared health record — but your name is removed from them</li>
+    <li>Any care shifts assigned to you are released as open so other members can cover them</li>
+    <li>If you held the group's Carelyn Family subscription, the group is moved to the Free plan</li>
+  </ul>
+
+  <h2>Data We May Retain</h2>
+  <p>Payment and billing records are retained where required for tax, accounting, or other legal obligations. Subscription payments are processed by Apple and Google; we never hold your payment card details. Everything else is deleted as described above.</p>
+
+  <div class="contact-box">
+    <h3>Questions? Contact Us</h3>
+    <p>Carelyn LLC</p>
+    <p>Email: <a href="mailto:hello@getcarelyn.com">hello@getcarelyn.com</a></p>
+    <p>Website: <a href="https://getcarelyn.com">getcarelyn.com</a></p>
+  </div>
+
+</div>
+
+<footer>
+  <p>© 2026 Carelyn LLC · <a href="/">Home</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="delete-account.html">Delete Account</a> · <a href="mailto:hello@getcarelyn.com">Contact</a></p>
+</footer>
+
+</body>
+</html>
