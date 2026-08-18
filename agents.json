@@ -1,0 +1,8 @@
+{
+  "schema_version": "1.0",
+  "name": "Carelyn",
+  "description": "A family care coordination app for iOS. Families use Carelyn to track medications, assign tasks, coordinate a care schedule, log health vitals, and keep a shared care journal in one place.",
+  "url": "https://getcarelyn.com",
+  "capabilities": ["contact"],
+  "contact": "hello@getcarelyn.com"
+}
