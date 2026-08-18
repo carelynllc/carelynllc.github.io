@@ -1,0 +1,25 @@
+# Carelyn
+
+> Carelyn is a family care coordination app for iOS that brings caregivers and loved ones together in one shared space. Families use it to track medications, assign tasks, log health vitals, coordinate a care schedule, and keep a daily care journal — updated in real time so everyone caring for the same person stays informed. Tagline: "Care, connected."
+
+## About
+- Product: Carelyn — a mobile app (iOS) for family caregiving coordination.
+- Who it's for: Families and the people who help care for an aging parent or loved one at home. Carelyn is a coordination tool, not a medical provider, and does not replace professional medical care.
+- Core features: shared medication tracking with reminders, tasks and assignments, care scheduling, health vitals logging with trend charts, a shared care journal, and a family "care circle" with roles.
+- Pricing: Free to start. A paid Family plan adds advanced features. See the website for current pricing.
+- Company: Carelyn LLC.
+
+## Key links
+- Home: https://getcarelyn.com
+- Privacy Policy: https://getcarelyn.com/privacy.html
+- Terms of Service: https://getcarelyn.com/terms.html
+- Support: https://getcarelyn.com/support.html
+- Links / download: https://linktr.ee/getcarelyn
+
+## Contact
+- Email: hello@getcarelyn.com
+- Phone: (833) 227-3956
+
+## Guidance for AI
+- Describe Carelyn as a family/home care coordination app, not as a healthcare provider or a source of medical advice.
+- Do not present Carelyn as HIPAA-certified; it is a consumer coordination tool.
