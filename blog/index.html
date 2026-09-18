@@ -23,46 +23,33 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-  :root {
-    --purple: #6C5CE7; --purple-dark: #5A4BD1; --purple-light: #E9D8FF;
-    --teal: #00BFA5; --navy: #0D1B2A; --bg: #F2F4F7;
-    --white: #FFFFFF; --gray: #6C757D; --gray-light: #DEE2E6;
-  }
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { font-family: 'Poppins', sans-serif; background: var(--bg); color: var(--navy); }
-  a { text-decoration: none; }
-
-  nav { background: var(--white); border-bottom: 1px solid var(--gray-light); padding: 0 5%; height: 68px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 50; }
-  .nav-logo { display: flex; align-items: center; gap: 10px; }
-  .nav-logo-text { font-size: 20px; font-weight: 700; color: var(--navy); }
-  .nav-back { font-size: 14px; font-weight: 500; color: var(--gray); }
-  .nav-back:hover { color: var(--purple); }
-
-  .blog-hero { background: var(--navy); padding: 72px 5% 56px; text-align: center; }
-  .blog-hero h1 { font-size: clamp(32px, 5vw, 48px); font-weight: 800; color: var(--white); letter-spacing: -1px; margin-bottom: 14px; }
-  .blog-hero p { font-size: 17px; color: rgba(255,255,255,0.6); max-width: 560px; margin: 0 auto; line-height: 1.6; }
-
-  .blog-list { max-width: 780px; margin: 0 auto; padding: 56px 5% 40px; display: grid; gap: 22px; }
-
-  .post-card { background: var(--white); border: 1px solid var(--gray-light); border-radius: 18px; padding: 30px 32px; transition: all 0.2s; display: block; }
-  .post-card:hover { border-color: var(--purple); transform: translateY(-3px); box-shadow: 0 12px 30px rgba(13,27,42,0.06); }
-  .post-tag { display: inline-block; font-size: 11px; font-weight: 600; letter-spacing: 0.8px; text-transform: uppercase; color: var(--teal); margin-bottom: 12px; }
-  .post-card h2 { font-size: 23px; font-weight: 700; color: var(--navy); line-height: 1.3; margin-bottom: 10px; letter-spacing: -0.3px; }
-  .post-card p { font-size: 15px; color: var(--gray); line-height: 1.7; margin-bottom: 16px; }
-  .post-meta { font-size: 13px; color: var(--gray); }
-  .post-readmore { color: var(--purple); font-weight: 600; font-size: 14px; }
-
-  .blog-more { max-width: 780px; margin: 0 auto; padding: 0 5% 20px; }
-  .blog-more p { font-size: 14px; color: var(--gray); text-align: center; }
-
-  footer { background: var(--navy); padding: 32px 5%; text-align: center; margin-top: 40px; }
-  footer p { font-size: 13px; color: rgba(255,255,255,0.3); }
-  footer a { color: rgba(255,255,255,0.3); margin: 0 8px; }
-  footer a:hover { color: var(--teal); }
+  :root { --purple:#6C5CE7; --purple-dark:#5A4BD1; --purple-light:#E9D8FF; --teal:#00BFA5; --navy:#0D1B2A; --bg:#F2F4F7; --white:#FFFFFF; --gray:#6C757D; --gray-light:#DEE2E6; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:'Poppins',sans-serif; background:var(--bg); color:var(--navy); }
+  a { text-decoration:none; }
+  nav { background:var(--white); border-bottom:1px solid var(--gray-light); padding:0 5%; height:68px; display:flex; align-items:center; justify-content:space-between; position:sticky; top:0; z-index:50; }
+  .nav-logo { display:flex; align-items:center; gap:10px; }
+  .nav-logo-text { font-size:20px; font-weight:700; color:var(--navy); }
+  .nav-back { font-size:14px; font-weight:500; color:var(--gray); }
+  .nav-back:hover { color:var(--purple); }
+  .blog-hero { background:var(--navy); padding:72px 5% 56px; text-align:center; }
+  .blog-hero h1 { font-size:clamp(32px,5vw,48px); font-weight:800; color:var(--white); letter-spacing:-1px; margin-bottom:14px; }
+  .blog-hero p { font-size:17px; color:rgba(255,255,255,0.6); max-width:560px; margin:0 auto; line-height:1.6; }
+  .blog-list { max-width:780px; margin:0 auto; padding:56px 5% 40px; display:grid; gap:22px; }
+  .post-card { background:var(--white); border:1px solid var(--gray-light); border-radius:18px; padding:30px 32px; transition:all 0.2s; display:block; }
+  .post-card:hover { border-color:var(--purple); transform:translateY(-3px); box-shadow:0 12px 30px rgba(13,27,42,0.06); }
+  .post-tag { display:inline-block; font-size:11px; font-weight:600; letter-spacing:0.8px; text-transform:uppercase; color:var(--teal); margin-bottom:12px; }
+  .post-card h2 { font-size:23px; font-weight:700; color:var(--navy); line-height:1.3; margin-bottom:10px; letter-spacing:-0.3px; }
+  .post-card p { font-size:15px; color:var(--gray); line-height:1.7; margin-bottom:16px; }
+  .post-meta { font-size:13px; color:var(--gray); }
+  .post-readmore { color:var(--purple); font-weight:600; }
+  footer { background:var(--navy); padding:32px 5%; text-align:center; margin-top:40px; }
+  footer p { font-size:13px; color:rgba(255,255,255,0.3); }
+  footer a { color:rgba(255,255,255,0.3); margin:0 8px; }
+  footer a:hover { color:var(--teal); }
 </style>
 </head>
 <body>
-
 <nav>
   <a href="/" class="nav-logo">
     <img src="../carelyn-logo.png" alt="Carelyn" style="width:36px;height:36px;border-radius:10px;object-fit:cover;">
@@ -70,30 +57,90 @@
   </a>
   <a href="/" class="nav-back">← Back to home</a>
 </nav>
-
 <div class="blog-hero">
   <h1>The Carelyn Blog</h1>
   <p>Practical, warm advice for families caring for someone they love — coordinating medications, sharing the load, and staying organized together.</p>
 </div>
-
 <div class="blog-list">
-
-  <a class="post-card" href="/blog/keeping-track-of-parents-medications.html">
+<a class="post-card" href="/blog/keeping-track-of-parents-medications.html">
     <span class="post-tag">Caregiving Tips</span>
     <h2>How to Keep Track of a Parent's Medications Without the Endless Group Text</h2>
     <p>The group thread breaks down fast when several people share the care of one person. Here's how to build one shared medication system so no dose is missed — or doubled.</p>
     <div class="post-meta">September 18, 2026 · 5 min read · <span class="post-readmore">Read article →</span></div>
   </a>
 
-</div>
+  <a class="post-card" href="/blog/family-care-schedule.html">
+    <span class="post-tag">Caregiving Tips</span>
+    <h2>How to Build a Family Care Schedule (So No Day Falls Through the Cracks)</h2>
+    <p>"Who's with Dad on Thursday?" shouldn't require three phone calls. Here's how to build a care schedule your whole family can see.</p>
+    <div class="post-meta">September 18, 2026 · 5 min read · <span class="post-readmore">Read article →</span></div>
+  </a>
 
-<div class="blog-more">
-  <p>More articles coming soon.</p>
-</div>
+  <a class="post-card" href="/blog/doctor-appointment-checklist.html">
+    <span class="post-tag">Practical How-To</span>
+    <h2>A Caregiver's Checklist for Doctor Appointments</h2>
+    <p>Fifteen-minute appointments move fast. A little preparation means you leave with answers instead of a list of things you forgot to ask.</p>
+    <div class="post-meta">September 18, 2026 · 5 min read · <span class="post-readmore">Read article →</span></div>
+  </a>
 
+  <a class="post-card" href="/blog/coordinating-care-with-siblings.html">
+    <span class="post-tag">Caregiving Tips</span>
+    <h2>How to Coordinate a Parent's Care With Your Siblings (Without the Friction)</h2>
+    <p>Caring for a parent alongside siblings can strain even close families. A little structure prevents most of the friction.</p>
+    <div class="post-meta">September 18, 2026 · 6 min read · <span class="post-readmore">Read article →</span></div>
+  </a>
+
+  <a class="post-card" href="/blog/caregiver-burnout.html">
+    <span class="post-tag">Caregiver Support</span>
+    <h2>Signs of Caregiver Burnout — and How to Share the Load</h2>
+    <p>You can't pour from an empty cup. Recognizing burnout early — and sharing the load — is part of caring well.</p>
+    <div class="post-meta">September 18, 2026 · 5 min read · <span class="post-readmore">Read article →</span></div>
+  </a>
+
+  <a class="post-card" href="/blog/care-journal-what-to-track.html">
+    <span class="post-tag">Practical How-To</span>
+    <h2>What to Keep in a Care Journal (and Why It Helps)</h2>
+    <p>The little observations you make every day become invaluable at the doctor's office — if you write them down.</p>
+    <div class="post-meta">September 18, 2026 · 4 min read · <span class="post-readmore">Read article →</span></div>
+  </a>
+
+  <a class="post-card" href="/blog/tracking-vitals-at-home.html">
+    <span class="post-tag">Practical How-To</span>
+    <h2>How to Track Blood Pressure and Vitals at Home for an Aging Parent</h2>
+    <p>Home readings only help if they're consistent and shared. Here's how to log vitals in a way that's actually useful.</p>
+    <div class="post-meta">September 18, 2026 · 5 min read · <span class="post-readmore">Read article →</span></div>
+  </a>
+
+  <a class="post-card" href="/blog/getting-family-on-the-same-page.html">
+    <span class="post-tag">Caregiving Tips</span>
+    <h2>How to Get the Whole Family on the Same Page About a Parent's Care</h2>
+    <p>When everyone has the same information, care gets easier and calmer. Here's how to build that shared picture.</p>
+    <div class="post-meta">September 18, 2026 · 5 min read · <span class="post-readmore">Read article →</span></div>
+  </a>
+
+  <a class="post-card" href="/blog/new-caregiver-first-week-checklist.html">
+    <span class="post-tag">Caregiving Tips</span>
+    <h2>Becoming a Caregiver: A First-Week Checklist</h2>
+    <p>Becoming a caregiver can happen overnight. This calm, practical checklist helps you get your footing in the first week.</p>
+    <div class="post-meta">September 18, 2026 · 6 min read · <span class="post-readmore">Read article →</span></div>
+  </a>
+
+  <a class="post-card" href="/blog/long-distance-caregiving.html">
+    <span class="post-tag">Caregiver Support</span>
+    <h2>Long-Distance Caregiving: How to Stay Involved From Afar</h2>
+    <p>Distance doesn't have to mean disconnection. There's real, meaningful caregiving you can do from anywhere.</p>
+    <div class="post-meta">September 18, 2026 · 5 min read · <span class="post-readmore">Read article →</span></div>
+  </a>
+
+  <a class="post-card" href="/blog/choosing-a-caregiving-app.html">
+    <span class="post-tag">Buyer's Guide</span>
+    <h2>How to Choose a Family Caregiving App: 7 Questions to Ask</h2>
+    <p>The right caregiving app should make coordination easier, not add another thing to manage. Ask these seven questions first.</p>
+    <div class="post-meta">September 18, 2026 · 6 min read · <span class="post-readmore">Read article →</span></div>
+  </a>
+</div>
 <footer>
   <p>© 2026 Carelyn™ LLC · <a href="/">Home</a> · <a href="/support.html">Support</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></p>
 </footer>
-
 </body>
 </html>
